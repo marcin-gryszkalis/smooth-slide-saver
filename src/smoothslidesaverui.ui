@@ -1,0 +1,282 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>SmoothSlideSaverUI</class>
+<comment>This is the main UI for setting up your screen saver.</comment>
+<author>Carsten Weinhold</author>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>smoothSlideSaverSetupDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>4</y>
+            <width>346</width>
+            <height>150</height>
+        </rect>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>400</width>
+            <height>150</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Configure SmoothSlideSaver</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout15</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout11</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel1</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Image directory:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>textLabel2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Delay:</string>
+                            </property>
+                        </widget>
+                    </vbox>
+                </widget>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout13</cstring>
+                    </property>
+                    <vbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="KURLRequester">
+                            <property name="name">
+                                <cstring>imagePathRequester</cstring>
+                            </property>
+                            <property name="showLocalProtocol">
+                                <bool>false</bool>
+                            </property>
+                            <property name="toolTip" stdset="0">
+                                <string>Choose a directory containing images</string>
+                            </property>
+                            <property name="whatsThis" stdset="0">
+                                <string>Here you can choose a directory which contains the images to be displayed.</string>
+                            </property>
+                        </widget>
+                        <widget class="QLayoutWidget">
+                            <property name="name">
+                                <cstring>layout12</cstring>
+                            </property>
+                            <hbox>
+                                <property name="name">
+                                    <cstring>unnamed</cstring>
+                                </property>
+                                <widget class="KIntNumInput">
+                                    <property name="name">
+                                        <cstring>delayInput</cstring>
+                                    </property>
+                                    <property name="value">
+                                        <number>10</number>
+                                    </property>
+                                    <property name="minValue">
+                                        <number>5</number>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>20</number>
+                                    </property>
+                                    <property name="referencePoint">
+                                        <number>5</number>
+                                    </property>
+                                    <property name="suffix">
+                                        <string> seconds</string>
+                                    </property>
+                                    <property name="toolTip" stdset="0">
+                                        <string>Each image will be shown this long</string>
+                                    </property>
+                                    <property name="whatsThis" stdset="0">
+                                        <string>Here you can specify, for how long each image should be displayed, before another one will be shown.</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer3</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>110</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </hbox>
+                        </widget>
+                    </vbox>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QCheckBox">
+            <property name="name">
+                <cstring>useSubDirCheckBox</cstring>
+            </property>
+            <property name="text">
+                <string>Also use images from subdirectories</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Also display images from subdirectories</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Activate this checkbox, if images residing in subdirectories of the selected image directory should also be used.</string>
+            </property>
+        </widget>
+        <spacer>
+            <property name="name">
+                <cstring>spacer2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>16</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QFrame">
+            <property name="name">
+                <cstring>frame4</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>HLine</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout6</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="KPushButton">
+                    <property name="name">
+                        <cstring>aboutButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;About</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+A</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>120</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okayButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </vbox>
+</widget>
+<connections>
+    <connection>
+        <sender>cancelButton</sender>
+        <signal>clicked()</signal>
+        <receiver>smoothSlideSaverSetupDialog</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>okayButton</sender>
+        <signal>clicked()</signal>
+        <receiver>smoothSlideSaverSetupDialog</receiver>
+        <slot>accept()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>imagePathRequester</tabstop>
+    <tabstop>delayInput</tabstop>
+    <tabstop>useSubDirCheckBox</tabstop>
+    <tabstop>okayButton</tabstop>
+    <tabstop>aboutButton</tabstop>
+    <tabstop>cancelButton</tabstop>
+</tabstops>
+<includes>
+    <include location="global" impldecl="in implementation">kdialog.h</include>
+</includes>
+<layoutdefaults spacing="6" margin="11"/>
+<layoutfunctions spacing="KDialog::spacingHint" margin="KDialog::marginHint"/>
+<includehints>
+    <includehint>kurlrequester.h</includehint>
+    <includehint>klineedit.h</includehint>
+    <includehint>kpushbutton.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>knuminput.h</includehint>
+    <includehint>kpushbutton.h</includehint>
+</includehints>
+</UI>

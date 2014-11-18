@@ -1,0 +1,11 @@
+0.4.2
+
+* code cleanup and bug fixes
+* added a not yet complete debugging mode to make it easier to find the
+  cause of bugs which I cannot reproduce on my computer (to activate, add
+  'DebugMode=true' to section [Settings] of the configuration file)
+
+0.4.1
+
+* Initial public release
+

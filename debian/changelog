@@ -1,0 +1,95 @@
+smoothslidesaver (0.4.2-2) unstable; urgency=low
+
+  * fixed build issues on some systems (added missing #includes in debug.cpp)
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Mon, 16 Jan 2006 23:10:14 +0100
+
+smoothslidesaver (0.4.2-1) unstable; urgency=low
+
+  * code cleanup and bug fixes
+  * added a not yet complete debugging mode to make it easier to find the
+    cause of bugs which I cannot reproduce on my computer (to activate, add
+    'DebugMode=true' to section [Settings] of the configuration file)
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Sat,  7 Jan 2006 19:10:44 +0100
+
+smoothslidesaver (0.4.1-2) unstable; urgency=low
+
+  * removed build dependency on xlibmesa-gl-dev | x11proto-gl-dev,
+    these packages are already pulled in by libqt3-mt-dev
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Mon,  2 Jan 2006 21:18:41 +0100
+
+smoothslidesaver (0.4.1-1) unstable; urgency=low
+
+  * bug fixes
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Sat, 01 Jan 2006 14:33:11 +0100
+
+smoothslidesaver (0.4-1) unstable; urgency=low
+
+  * new version, prepared for public release
+  * make mailto: link in About dialog work
+  * added some config options to tweak SmoothSlideSaver
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Sun,  9 Oct 2005 15:13:00 +0200
+
+smoothslidesaver (0.3-2) unstable; urgency=low
+
+  * fix for (at least) Matrox G400: make blending work
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Fri, 30 Sep 2005 16:15:59 +0200
+
+smoothslidesaver (0.3-1) unstable; urgency=low
+
+  * About dialog added
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Mon, 25 Jul 2005 22:24:03 +0200
+
+smoothslidesaver (0.2-4) unstable; urgency=low
+
+  * German translation fixed: Umlauts and missing whitespace
+  * Internal stuff: code cleanups; only clear GL depth buffer when
+    necessary
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Sat, 23 Jul 2005 17:03:35 +0200
+
+smoothslidesaver (0.2-3) unstable; urgency=low
+
+  * Tweak: Images appear in a more random order
+  * Use sync-to-vblank on NVidia graphics hardware
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Wed, 20 Jul 2005 23:46:49 +0200
+
+smoothslidesaver (0.2-2) unstable; urgency=low
+
+  * Small tweak: The same transition effect is repeated at most once
+    instead of twice.
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Sat, 16 Jul 2005 21:01:00 +0200
+
+smoothslidesaver (0.2-1) unstable; urgency=low
+
+  * New release
+  * Improved smoothness of blend effects
+  * Paint a black screen while collecting images during startup, loading
+    seems faster now
+  * Prevent the same image from being displayed twice without another one
+    inbetween
+  * Fix German Umlauts in .desktop file
+  * Fix Debian packaging
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Sat, 16 Jul 2005 20:34:11 +0200
+
+smoothslidesaver (0.1-2) unstable; urgency=low
+
+  * added --with-qt-includes=... to configure line in debian/rules
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Mon, 14 Feb 2005 18:39:35 +0100
+
+smoothslidesaver (0.1-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Carsten Weinhold <carsten.weinhold@gmx.de>  Sat, 15 Jan 2005 16:29:09 +0100
+

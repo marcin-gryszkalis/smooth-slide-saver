@@ -1,0 +1,14 @@
+Source: smoothslidesaver
+Section: kde
+Priority: optional
+Maintainer: Carsten Weinhold <carsten.weinhold@gmx.de>
+Build-Depends: debhelper (>= 4.0.0), kdelibs4-dev (>= 3.3)
+Standards-Version: 3.6.0
+
+Package: smoothslidesaver
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Screensaver for KDE using OpenGL
+ OpenGL-Screensaver for KDE, that displays images in a slideshow
+ using the famous Ken Burns effect together with nice transition
+ effects (crossfade and fade in/out).

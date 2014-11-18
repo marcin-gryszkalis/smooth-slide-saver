@@ -1,0 +1,28 @@
+[Desktop Entry]
+Encoding=UTF-8
+Exec=smoothslidesaver.kss
+Icon=smoothslidesaver
+Type=Application
+Actions=Setup;InWindow;Root
+X-KDE-Category=OpenGL Screen Savers
+X-KDE-Type=OpenGL
+Name=SmoothSlideSaver (Slideshow with Ken Burns effect)
+Name[de]=SmoothSlideSaver (Dia-Schau mit Ken Burns-Effekt)
+
+[Desktop Action Setup]
+Exec=smoothslidesaver.kss -setup
+Name=Setup...
+Name[de]=Einrichtung...
+Icon=kscreensaver
+ 
+[Desktop Action InWindow]
+Exec=smoothslidesaver.kss -window-id %w
+Name=Display in Specified Window
+Name[de]=In bestimmten Fenster anzeigen
+NoDisplay=true
+ 
+[Desktop Action Root]
+Exec=smoothslidesaver.kss -root
+Name=Display in Root Window
+Name[de]=In Hintergrundfenster anzeigen
+NoDisplay=true

@@ -1,0 +1,168 @@
+# translation of de.po to
+# translation of de.po to
+# , 2004.
+# , 2004.
+# , 2004.
+# , 2004.
+# Carsten Weinhold <carsten.weinhold@gmx.de>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: de\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-10-30 15:16+0100\n"
+"PO-Revision-Date: 2005-10-30 15:17+0100\n"
+"Last-Translator: Carsten Weinhold <carsten.weinhold@gmx.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.10.2\n"
+
+#: rc.cpp:3
+#, no-c-format
+msgid "About SmoothSlideSaver"
+msgstr "Über SmoothSlideSaver"
+
+#: rc.cpp:6
+#, no-c-format
+msgid "<b>SmoothSlideSaver</b>"
+msgstr ""
+
+#: rc.cpp:9
+#, no-c-format
+msgid ""
+"A KDE screensaver showing images in a slideshow with nice pan and zoom "
+"effects."
+msgstr ""
+"Ein KDE-Bildschirmschoner, der Bilder in einer Dia-Schau mit netten Effekten "
+"anzeigt."
+
+#: rc.cpp:12
+#, no-c-format
+msgid "(C) by Carsten Weinhold"
+msgstr "(C) Carsten Weinhold"
+
+#: rc.cpp:15 rc.cpp:21
+#, no-c-format
+msgid "carsten.weinhold@gmx.de"
+msgstr ""
+
+#: rc.cpp:18
+#, no-c-format
+msgid "Carsten Weinhold <carsten.weinhold@gmx.de>"
+msgstr ""
+
+#: rc.cpp:24 rc.cpp:27
+#, no-c-format
+msgid "Send an email to the author"
+msgstr "Eine E-Mail an den Autor schicken"
+
+#: rc.cpp:30
+#, no-c-format
+msgid ""
+"This program is licensed under the terms of the <i>GNU General Public "
+"License (GPL), Version 2 or, at your option, later</i>."
+msgstr ""
+"Dieses Programm steht unter der <i>GNU General Public License (GPL), Version "
+"2 oder, nach Ihrer Wahl, einer späteren Version</i>."
+
+#: rc.cpp:37
+#, no-c-format
+msgid "Configure SmoothSlideSaver"
+msgstr "SmoothSlideSaver konfigurieren"
+
+#: rc.cpp:40
+#, no-c-format
+msgid "Image directory:"
+msgstr "Bilderordner:"
+
+#: rc.cpp:43
+#, no-c-format
+msgid "Delay:"
+msgstr "Verzögerung:"
+
+#: rc.cpp:46
+#, no-c-format
+msgid "Choose a directory containing images"
+msgstr "Wählen Sie einen Ordner mit Bildern"
+
+#: rc.cpp:49
+#, no-c-format
+msgid "Here you can choose a directory which contains the images to be displayed."
+msgstr ""
+"Hier können Sie einen Ordner auswählen, der Bilder enthält die angezeigt "
+"werden sollen."
+
+#: rc.cpp:52
+#, no-c-format
+msgid " seconds"
+msgstr " Sekunden"
+
+#: rc.cpp:55
+#, no-c-format
+msgid "Each image will be shown this long"
+msgstr "Jedes Bild wird solange angezeigt"
+
+#: rc.cpp:58
+#, no-c-format
+msgid ""
+"Here you can specify, for how long each image should be displayed, before "
+"another one will be shown."
+msgstr ""
+"Hier können Sie angeben, wie lange jedes Bild angezeigt werden soll, bevor "
+"ein anderes gezeigt wird."
+
+#: rc.cpp:61
+#, no-c-format
+msgid "Also use images from subdirectories"
+msgstr "Bilder aus Unterordnern ebenfalls benutzen"
+
+#: rc.cpp:64
+#, no-c-format
+msgid "Also display images from subdirectories"
+msgstr "Bilder aus Unterordnern ebenfalls anzeigen"
+
+#: rc.cpp:67
+#, no-c-format
+msgid ""
+"Activate this checkbox, if images residing in subdirectories of the selected "
+"image directory should also be used."
+msgstr ""
+"Aktivieren Sie dies, wenn Bilder aus Unterordnern des ausgewählten Ordners "
+"ebenfalls benutzt werden sollen."
+
+#: rc.cpp:73
+#, no-c-format
+msgid "Alt+A"
+msgstr ""
+
+#: rc.cpp:79
+#, no-c-format
+msgid "Alt+O"
+msgstr ""
+
+#: rc.cpp:85
+#, no-c-format
+msgid "Alt+C"
+msgstr ""
+
+#: smoothslidesaver.cpp:39
+msgid ""
+"A KDE Screensaver displaying images in a slideshow with the famous Ken Burns "
+"effect"
+msgstr ""
+"Ein KDE-Bildschirmschoner, der Bilder in einer Diashow mit dem berühmten Ken-"
+"Burns-Effekt anzeigt."
+
+#: smoothslidewidget.cpp:295
+msgid "No images found! Please specify a directory containing images."
+msgstr "Keine Bilder gefunden! Bitte geben Sie einen Ordner mit Bildern an."
+
+#: smoothslidewidget.cpp:296
+msgid ""
+"You can do that using the screensaver configuration module of the KDE "
+"Control Center."
+msgstr ""
+"Sie können dies im Bildschirmschoner-Konfigurationsmodul des KDE "
+"Kontrollzentrums tun."
+

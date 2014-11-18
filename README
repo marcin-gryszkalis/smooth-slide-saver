@@ -1,0 +1,63 @@
+This is a KDE screensaver, which displays images from a folder as a slideshow.
+It uses the famous Ken Burns effect together with nice transition effects. My
+goal is to keep it as simple as possible with a sensible default configuration.
+However, if you want to tweak it a bit, there are a few 'secret' configuration
+options:
+
+You can add
+
+  DisableCrossFade=true
+or
+  DisableFadeInOut=true
+
+to the configuration file $KDEHOME/share/config/smoothslidesaver.kssrc to
+disable some effects (it doesn't make much sense to disable both, btw.).
+Default is all effects enabled.
+
+SmoothSlideSaver will automatically detect, which refresh rate your monitor is
+using and it will adjust its own frame rate accordingly. The following table
+shows, which refresh rate will be chosen:
+
+  Frame rate:   Monitor refresh rate:
+  25 Hz         (50), 75, 100 Hz   (PAL compliant setups)
+  28 Hz         85, 110 Hz         (seems to work ok)
+  30 Hz         60, 90, 120 Hz     (NTSC compliant setups)
+
+SmoothSlideSaver will choose the frame rate, which matches your monitor
+configuration best. This should work for 99% of all configurations, even if
+your setup uses a refresh rate which is close to the ones listed above.
+However, if your monitor is operating at an really strange refresh rate (e.g.
+something like 79 Hz), it might be beneficial to tweak SmoothSlideSaver's
+frame rate manually. You can do this by adding
+
+  ForceFrameRate=HZ
+
+to the configuration file. HZ is a number, e.g. 35. Please keep in mind, that
+increasing the frame rate will also increase the load on your CPU and graphics
+card, especially if your computers OpenGL implementation isn't that fast. Other
+applications running while the screensaver is active won't be able make much
+use of the CPU power dedicated to the screensaver. The generated load heavily
+depends on the kind of CPU, graphics card and OpenGL driver you are using. I
+also strongly recommend using a kernel from the 2.6 series, otherwise the
+animations might be a bit jerky.
+
+To further increase visual quality of the effects, your graphics card should be
+using the 'Sync on VBlank' feature to avoid tearing artifacts (ugly artifacts,
+which make the image on the screen look like being cut into two pieces during
+the fade effects). If you are using an NVidia graphics card with the
+propriatary NVidia driver, you don't need to worry about that, because
+'Sync on VBlank' is enabled automatically for SmoothSlideSaver. The proprietary
+ATI driver will require a line like the following to be present in your
+/etc/X11/xorg.conf or /etc/X11/XF86Config-4 (the '8' in the third digit is the
+important thing, the other digits may vary):
+
+  Section "Display"
+     ...
+     Option "Capabilities" "0x00000800"
+     ...
+  EndSection
+
+I don't know how to enable it for other cards or DRI configurations (or if it
+is possible at all). It also seems, that some configurations have it enabled by
+default.
+
